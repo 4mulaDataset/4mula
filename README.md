@@ -14,7 +14,7 @@ PS.: We will make the complete dataset available after the paper evaluation proc
 
 
 Requirements to code run:
-[python3.7](https://www.python.org/downloads/release/python-370/)
-[pipenv](https://pypi.org/project/pipenv/)
+- [python3.7](https://www.python.org/downloads/release/python-370/)
+- [pipenv](https://pypi.org/project/pipenv/)
 
 All libs are in Pipfile. To instal them and active to enviroment using `pipenv run && pipenv shell` 
