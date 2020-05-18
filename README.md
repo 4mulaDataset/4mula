@@ -10,7 +10,7 @@ We also provide a file with only the metadata without any acoustic features, whi
 
 All dataset change will write in the file `CHANGELOG`. 
 
-PS.: We will make the complete dataset available after the paper evaluation process, because the storage service may disclose the name of the paper's authors.
+PS.: We will make the complete dataset available after the paper evaluation process, because the storage service may disclose the name of the paper's authors, which is denied in the blind review process.
 
 
 Requirements to code run:
