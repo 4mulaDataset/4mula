@@ -2,7 +2,7 @@
 The 4MuLA is a dataset built with music information extracted from the Brazilian portal [Vagalume](http://api.vagalume.com.br/docs/).
 We are making available the small version of the dataset used for the experiments carried out on the paper along with a code snippet for reading.
 
-This subset has a 5GB compress and 24GB after uncompressing and can be downloaded [here](https://mega.nz/file/nSAmTYhB#us-BHkE8FlFF5WABQs0IeGxNWC_B2aF9TvLuiXkbCgI).
+This subset has a 8GB compress and 24GB after uncompressing and can be downloaded [here](https://mega.nz/file/nSAmTYhB#us-BHkE8FlFF5WABQs0IeGxNWC_B2aF9TvLuiXkbCgI).
 The subset has the following attributes:
 `musid_id, music_name, music_lang, lyric, art_name, art_id, main_genre, related_genre, related_art, related_music, art_rank, musicnn, melspectogram`
 
