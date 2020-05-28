@@ -7,7 +7,7 @@ import pickle
 if not (os.path.exists("../files/melspec/")):
     os.mkdir("../files/melspec/")
 
-df = pd.read_parquet('../files/4mula_small_2.parquet')
+df = pd.read_parquet('../files/4mula_small.parquet')
 
 melspecs = df["melspectrogram"]
 labels = df["main_genre"]
