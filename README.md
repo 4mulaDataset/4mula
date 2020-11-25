@@ -54,7 +54,4 @@ Index(['music_id', 'music_name', 'music_lang', 'music_lyric', 'art_id',
 
 ```
 
-All dataset changes will write in the file `CHANGELOG`. 
-
-PS.: We will make the complete dataset and code available after the paper evaluation process, because the storage service may disclose the name of the paper's authors, which is denied in the blind review process.
-
+All dataset changes will write in the file [CHANGELOG](Changelog.md). 
