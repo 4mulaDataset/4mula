@@ -1,10 +1,10 @@
-##Initial Version - December 2020
+## Initial Version - December 2020
 This version has:
 - 96,458 musics 
 - 15,310 artists 
 - 76 genres
 
-####Acoustic Features:
+#### Acoustic Features:
 
 - Chromagram
 - Melspectrogram
@@ -12,7 +12,7 @@ This version has:
 - Tempogram
 - Tonnetz
 
-####Other features:
+#### Other features:
 
 - Music Id
 - Music Name
@@ -27,7 +27,7 @@ This version has:
 - Related Music
 - Musicnn tags
 
-####Datasets and subsets:
+#### Datasets and subsets:
 
 - Full dataset - All music with organized dataset files by acoustic features
 - Small subset - Music of artists with rank below **500** and only melspectrogram as feature
