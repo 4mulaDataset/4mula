@@ -54,4 +54,30 @@ Index(['music_id', 'music_name', 'music_lang', 'music_lyric', 'art_id',
 
 ```
 
-All dataset changes will write in the file [CHANGELOG](Changelog.md). 
+
+
+
+#### Citing:
+
+```
+ACM Reference Format:Angelo Cesar Mendes da Silva, Diego Furtado Silva, and Ricardo Marcondes Marcacini. 2020. 4MuLA: A Multitask, Multimodal, and Multilingual Dataset of Music Lyrics and Audio Features. In Brazilian Symposium on Multimedia and the Web (WebMedia ’20), November 30-December 4, 2020, São Luís, Brazil. ACM, New York, NY, USA, 4 pages. https://doi.org/10.1145/3428658.34310891
+
+```
+or 
+```
+@inproceedings{4mula2020,
+    month = {11},
+    author = {Angelo Cesar Mendes da Silva and Diego Furtado Silva and Ricardo Marcondes Marcaini},
+    booktitle = {Brazilian Symposium on Multimedia and the Web (WebMedia ’20)},
+    title = {4MuLA: A Multitask, Multimodal, and Multilingual Dataset of Music Lyrics and Audio Features},
+    publisher = {ACM},
+    pages = {4},
+    year = {2020},
+    url = {https://doi.org/10.1145/3428658.34310891},
+    address={São Luís (Brazil)}
+}
+```
+
+#### Updates
+
+All changes are in [CHANGELOG](Changelog.md). 
