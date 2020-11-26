@@ -60,7 +60,11 @@ Index(['music_id', 'music_name', 'music_lang', 'music_lyric', 'art_id',
 #### Citing:
 
 ```
-ACM Reference Format:Angelo Cesar Mendes da Silva, Diego Furtado Silva, and Ricardo Marcondes Marcacini. 2020. 4MuLA: A Multitask, Multimodal, and Multilingual Dataset of Music Lyrics and Audio Features. In Brazilian Symposium on Multimedia and the Web (WebMedia ’20), November 30-December 4, 2020, São Luís, Brazil. ACM, New York, NY, USA, 4 pages. https://doi.org/10.1145/3428658.34310891
+ACM Reference Format:Angelo Cesar Mendes da Silva, Diego Furtado Silva, and Ricardo Marcondes Marcacini.
+2020. 4MuLA: A Multitask, Multimodal, and Multilingual Dataset 
+of Music Lyrics and Audio Features. In Brazilian Symposium on Multimedia 
+and the Web (WebMedia ’20), November 30-December 4, 2020, São Luís, Brazil. 
+ACM, New York, NY, USA, 4 pages. https://doi.org/10.1145/3428658.34310891
 
 ```
 or 
