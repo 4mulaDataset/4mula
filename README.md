@@ -1,26 +1,58 @@
 # 4MuLA: A Multitask, Multimodal, and Multilingual Dataset of Music Lyrics and Audio Features
-The 4MuLA is a dataset built with music information extracted from the Brazilian portal [Vagalume](http://api.vagalume.com.br/docs/).
-We are making available the small version of the dataset used for the experiments carried out on the paper along with a code snippet for reading.
 
-This subset has a 11GB and can be downloaded [here](https://mega.nz/file/3K4lAQIA#HUsw27Iu-kCmSPOPmETTyIP7aVX224KPNMWyoR3TJdo).
-The subset has the following features:
-`musid_id, music_name, music_lang, lyric, art_name, art_id, main_genre, related_genre, related_art, related_music, art_rank, musicnn, melspectogram`
+<div style="text-align: justify"> 
+We present a new benchmark dataset of songs with structured information to be applied in various machine learning tasks. 
+The data comes from a Brazilian portal <a href="http://api.vagalume.com.br/docs/">Vagalume</a> focused on lyrics information, but contain several other annotations provided by their users.  
+Our dataset, called 4MuLA (Multitask, Multimodal, and Multilingual Music Lyrics and Audio features dataset), includes features extracted from 96,458 songs distributed by 15,310 artists in 76 genres. 
+In particular, our dataset contains latin music genres that are often overlooked in other benchmark datasets. 
+For each track, we make available various acoustic features, extracted tags, and lyrics in English, Portuguese, or Spanish. 
+With these features, researchers can use our dataset for, at least, lyrics-, audio- or multimodal-based genre classification, music and artist similarity, and popularity regression. 
+Moreover, we can perform cross- or multilingual text analysis on lyrics, such as discourse analysis or measuring the differences between emotion transmitted by audio and lyrics. 
+</div>
 
-We also provide a file with only the metadata without any acoustic features, which can be downloaded [here](https://mega.nz/file/eWpyQKyT#7uTZQ9djcH3kF5zgHdVQ3nqGgp38TDWQpDur-guWZcE).
+
+#### Requirements
+All files have the `parquet` format. To read, is necessary install a engine. 
+We use `pyarrow` and `fastparquet`. You can install only one using:
+```pip install pyarrow``` or ```pip install fastparquet``` 
+
+#### Download 
+Its possible run the download part of dataset to use specific features. 
+In the [features](features) folder, all subsets are organized per features and with the **same samples** in each part.
+ 
+- 4MuLA Full ~ XX GIGAS
+    - Link para drive
+    - Download com wget
+
+- 4MuLA small ~ 11 Gigas
+    - Link para drive
+    - Download com wget    
+
+- 4MuLA tiny ~ 2 Gigas
+    - Link para drive
+    - Download com wget 
+
+- Download per acoustic features
+    - [Chromagram](features/chromagram.md)
+    - [MFCC](features/mfcc.md)
+    - [Melspectrogram](features/melspectrogram.md)
+    - [Tempogram](features/tempogram.md)
+    - [Tonnetz](features/tonnetz.md)
 
 
-##### The dataset read
-Reading the small dataset can be done using pandas.
+#### How to use
+To read the dataset, we use the function `read_parquet` existent in `Pandas` package. A example:
+
 ```python
 >>> import pandas as pd
 >>> df = pd.read_parquet('4mula_small.parquet')
 >>> df.columns
-Index(['music_id', 'music_name', 'music_lang', 'music_lyric', 'art_id',
+Index(['music_id', 'music_name', 'music_lang', 'music_lyrics', 'art_id',
        'art_name', 'art_rank', 'main_genre', 'related_genre', 'related_art',
-       'related_music', 'musicnn', 'melspectrogram'],
+       'related_music', 'musicnn_tags', 'melspectrogram'],
       dtype='object')
 
->>> df['music_id', 'music_name', 'music_lang', 'music_lyric'].head(5)
+>>> df['music_id', 'music_name', 'music_lang', 'music_lyrics'].head(5)
             music_id  music_name	             music_lang   music_lyric
 0  3ade68b6gc207fda3  I've Got To See You Again     en       Line on your face don't bother me\nDown ...
 1  3ade68b8g9410afa3  New Perspective               en       I feel the salty waves come in\nI feel  ...
@@ -44,7 +76,7 @@ Index(['music_id', 'music_name', 'music_lang', 'music_lyric', 'art_id',
 3 [{'id': '3ade68b5g8d18eda3', 'name': 'Lil Wayn...                                                 []
 4 [{'id': '3ade68b6g7d5aeda3', 'name': 'Mick Jag...  [{'id': '3ade68b7g9ae20ea3', 'name': 'Run Of T...
 
->>> df['musicnn', 'melspectrogram'].head(5)
+>>> df['musicnn_tags', 'melspectrogram'].head(5)
    musicnn                            melspectrogram
 0  ['piano','drums','slow']           [[136.96524, 135.869965, 118.730804, 133.62802...
 1  ['rock','pop','guitar']            [[6.28145981, 1.50680351, 0.260610491, 0.17753...
@@ -55,7 +87,9 @@ Index(['music_id', 'music_name', 'music_lang', 'music_lyric', 'art_id',
 ```
 
 
+#### Snippets:
 
+Some code used in experiments are available in [snippets](snippets) folder.
 
 #### Citing:
 
@@ -82,6 +116,7 @@ or
 }
 ```
 
-#### Updates
+#### Releases
 
-All changes are in [CHANGELOG](Changelog.md). 
+All updates, as new features or fixed bugs, are reported in [CHANGELOG](Changelog.md). 
+ 
