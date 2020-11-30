@@ -1,8 +1,6 @@
 ## Chromagram
 
 - Folder size: XX GIGAS
-- Size per file: ~XX GIGAS
+- Size per file: ~133 MB
 
-Link to Google drive folder: https://www.google.com
-
-Direct download: `wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=FILEID' -O FILENAME`
+- [Google Drive folder link](https://drive.google.com/drive/folders/18Zs763qrvs69SbLQ7VO6Cta4kOpmniPm?usp=sharing)

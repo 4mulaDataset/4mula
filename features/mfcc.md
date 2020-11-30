@@ -1,8 +1,5 @@
 ## MFCC
 
 - Folder size: XX GIGAS
-- Size per file: ~XX GIGAS
-
-Link to Google drive folder: https://www.google.com
-
-Direct download: `wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=FILEID' -O FILENAME`
+- Size per file: ~130 MB
+- [Google Drive folder link](https://drive.google.com/drive/folders/1ZgtVwtUpnWPZrpt_6vyl5odZqWxphtHp?usp=sharing)
