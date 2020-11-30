@@ -18,19 +18,22 @@ We use `pyarrow` and `fastparquet`. You can install only one using:
 
 #### Download 
 Its possible run the download part of dataset to use specific features. 
-In the [features](features) folder, all subsets are organized per features and with the **same samples** in each part.
+In the [features](features) folder, all subsets are organized per features with the **same samples** in each part.
  
-- 4MuLA Full ~ XX GIGAS
-    - Link para drive
-    - Download com wget
+- 4MuLA Full ~XX GIGAS
+    - [Google Drive Link](https://drive.google.com/uc?id=0B_uwUh3L9XbaWEtzV2pLWUtlT2M
+)    
+
+- 4MuLA Full - 80 MB (without acoustic features)
+    - [Google Drive Link](https://drive.google.com/file/d/1FqkdsCn4J2MbGLCTNiwSyzanQs2EsQaj/view?usp=sharing)
 
 - 4MuLA small ~ 11 Gigas
     - Link para drive
     - Download com wget    
 
-- 4MuLA tiny ~ 2 Gigas
-    - Link para drive
-    - Download com wget 
+- 4MuLA tiny - 2 GB
+    - [Google Drive Link](https://drive.google.com/drive/folders/1Wv9ETxEJCbPDMZv4y1-AP0e-EBoGke8F?usp=sharing)
+   
 
 - Download per acoustic features
     - [Chromagram](features/chromagram.md)
@@ -53,7 +56,7 @@ Index(['music_id', 'music_name', 'music_lang', 'music_lyrics', 'art_id',
       dtype='object')
 
 >>> df['music_id', 'music_name', 'music_lang', 'music_lyrics'].head(5)
-            music_id  music_name	             music_lang   music_lyric
+            music_id  music_name	             music_lang   music_lyrics
 0  3ade68b6gc207fda3  I've Got To See You Again     en       Line on your face don't bother me\nDown ...
 1  3ade68b8g9410afa3  New Perspective               en       I feel the salty waves come in\nI feel  ...
 2  3ade68b7gb67d7ea3  Renúncia                      pt-br    Hoje não existe nada mais entre nós  ...
@@ -77,7 +80,7 @@ Index(['music_id', 'music_name', 'music_lang', 'music_lyrics', 'art_id',
 4 [{'id': '3ade68b6g7d5aeda3', 'name': 'Mick Jag...  [{'id': '3ade68b7g9ae20ea3', 'name': 'Run Of T...
 
 >>> df['musicnn_tags', 'melspectrogram'].head(5)
-   musicnn                            melspectrogram
+   musicnn_tags                       melspectrogram
 0  ['piano','drums','slow']           [[136.96524, 135.869965, 118.730804, 133.62802...
 1  ['rock','pop','guitar']            [[6.28145981, 1.50680351, 0.260610491, 0.17753...
 2  ['male','classical','male vocal']  [[0.905277014, 0.33714968, 0.210445538, 0.1545...
