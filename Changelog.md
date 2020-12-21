@@ -30,5 +30,5 @@ This version has:
 #### Datasets and subsets:
 
 - Full dataset - All music with organized dataset files by acoustic features
-- Small subset - Music of artists with rank below **500** and only melspectrogram as feature
-- Tiny subset - Music of artists with rank below **100** and only melspectrogram as feature  
+- Small subset - Music of artists with rank below **500** and only melspectrogram as acoustic feature
+- Tiny subset - Music of artists with rank below **100** and only melspectrogram as acoustic feature  

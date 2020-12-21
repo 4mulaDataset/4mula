@@ -19,28 +19,29 @@ We use `pyarrow` and `fastparquet`. You can install only one using:
 #### Download 
 Its possible run the download part of dataset to use specific features. 
 In the [features](features) folder, all subsets are organized per features with the **same samples** in each part.
+The musics in `mfcc_part_1.parquet` are also the same musics in `chromagram_part_1.parquet`, `tonnetz_part_1.parquet`, `melspectrogram_part_1.parquet` and `tempogram_part_1.parquet`. 
+The same idea is present in parts 2, 3, 4...
  
-- 4MuLA Full ~XX GIGAS
-    - [Google Drive Link](https://drive.google.com/uc?id=0B_uwUh3L9XbaWEtzV2pLWUtlT2M
+- 4MuLA Full ~490 GB (all features)
+    - [Google Drive Link](https://drive.google.com/drive/folders/11PdCvT-tgOpgefg8F_VCCBMjzuYgERXe?usp=sharing)
 )    
 
-- 4MuLA Full - 80 MB (without acoustic features)
+- 4MuLA Full ~ 80 MB (without acoustic features)
     - [Google Drive Link](https://drive.google.com/file/d/1FqkdsCn4J2MbGLCTNiwSyzanQs2EsQaj/view?usp=sharing)
 
-- 4MuLA small ~ 11 Gigas
-    - Link para drive
-    - Download com wget    
-
-- 4MuLA tiny - 2 GB
+- 4MuLA small ~ 11 GB
+    - [Google Drive Link](https://drive.google.com/drive/folders/14q9cCOyQlxQg-UJZQezLebEONvfiFXDe?usp=sharing)
+      
+- 4MuLA tiny ~ 2 GB
     - [Google Drive Link](https://drive.google.com/drive/folders/1Wv9ETxEJCbPDMZv4y1-AP0e-EBoGke8F?usp=sharing)
    
 
 - Download per acoustic features
-    - [Chromagram](features/chromagram.md)
-    - [MFCC](features/mfcc.md)
-    - [Melspectrogram](features/melspectrogram.md)
-    - [Tempogram](features/tempogram.md)
-    - [Tonnetz](features/tonnetz.md)
+    - [Chromagram](features/chromagram.md) ~ 11GB
+    - [MFCC](features/mfcc.md) ~ 12gb
+    - [Melspectrogram](features/melspectrogram.md) ~ 91gb
+    - [Tempogram](features/tempogram.md) ~ 364gb
+    - [Tonnetz](features/tonnetz.md) ~ 12gb
 
 
 #### How to use
@@ -114,7 +115,7 @@ or
     publisher = {ACM},
     pages = {4},
     year = {2020},
-    url = {https://doi.org/10.1145/3428658.34310891},
+    url = {https://dl.acm.org/doi/abs/10.1145/3428658.3431089},
     address={São Luís (Brazil)}
 }
 ```
