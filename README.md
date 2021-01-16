@@ -38,10 +38,10 @@ The same idea is present in parts 2, 3, 4...
 
 - Download per acoustic features
     - [Chromagram](features/chromagram.md) ~ 11GB
-    - [MFCC](features/mfcc.md) ~ 12gb
-    - [Melspectrogram](features/melspectrogram.md) ~ 91gb
-    - [Tempogram](features/tempogram.md) ~ 364gb
-    - [Tonnetz](features/tonnetz.md) ~ 12gb
+    - [MFCC](features/mfcc.md) ~ 12GB
+    - [Melspectrogram](features/melspectrogram.md) ~ 91GB
+    - [Tempogram](features/tempogram.md) ~ 364GB
+    - [Tonnetz](features/tonnetz.md) ~ 12GB
 
 
 #### How to use
