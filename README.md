@@ -11,6 +11,12 @@ Moreover, we can perform cross- or multilingual text analysis on lyrics, such as
 </div>
 
 
+#### Datasets and subsets:
+- 4MuLA Large - 96,458 songs distributed by 15,310 artists in 76 genres. All music are organized by acoustic features in individual folders
+- 4MuLA Small - 9,661 songs distributed by 491 artists in 51 genres. Music of **Top 500** artists and only melspectrogram as acoustic feature
+- 4MuLA Tiny  - 1,988 songs distributed by 93 artists in 27 genres. Music of **Top 100** artists and only melspectrogram as acoustic feature
+
+
 #### Requirements
 All files have the `parquet` format. To read, is necessary install a engine. 
 We use `pyarrow` and `fastparquet`. You can install only one using:
@@ -21,27 +27,180 @@ Its possible run the download part of dataset to use specific features.
 In the [features](features) folder, all subsets are organized per features with the **same samples** in each part.
 The musics in `mfcc_part_1.parquet` are also the same musics in `chromagram_part_1.parquet`, `tonnetz_part_1.parquet`, `melspectrogram_part_1.parquet` and `tempogram_part_1.parquet`. 
 The same idea is present in parts 2, 3, 4...
- 
-- 4MuLA Full ~490 GB (all features)
-    - [Google Drive Link](https://drive.google.com/drive/folders/11PdCvT-tgOpgefg8F_VCCBMjzuYgERXe?usp=sharing)
-)    
 
-- 4MuLA Full ~ 80 MB (without acoustic features)
-    - [Google Drive Link](https://drive.google.com/file/d/1FqkdsCn4J2MbGLCTNiwSyzanQs2EsQaj/view?usp=sharing)
 
-- 4MuLA small ~ 11 GB
-    - [Google Drive Link](https://drive.google.com/drive/folders/14q9cCOyQlxQg-UJZQezLebEONvfiFXDe?usp=sharing)
+- 4MuLA Large ~ 490 GB 
+    - [Download](https://drive.google.com/drive/folders/11PdCvT-tgOpgefg8F_VCCBMjzuYgERXe?usp=sharing) (hosted in Google Drive)   
+    - Download individual acoustic features with metadata
+      - [Chromagram](features/chromagram.md) ~ 11GB
+      - [MFCC](features/mfcc.md) ~ 12GB
+      - [Melspectrogram](features/melspectrogram.md) ~ 91GB
+      - [Tempogram](features/tempogram.md) ~ 364GB
+      - [Tonnetz](features/tonnetz.md) ~ 12GB   
+    
+<div style="margin-left: 50px;">   
+<div style="display: inline-block">
+   Acoustic Features
+        <ul>
+          <li>Chromagram</li>
+          <li>Melspectrogram</li>
+          <li>MFCC</li>
+          <li>Tempogram</li>
+          <li>Tonnetz</li>          
+        </ul>
+</div>
+</div>
+ <div style="margin-left: 50px;">
+    
+<div style="display: inline-block">
+   Metadata
+        <ul>
+          <li>Music Id</li>
+          <li>Music Name</li>
+          <li>Music Language</li>
+          <li>Music Lyrics</li>
+        </ul>
+</div>
+<div style="display: inline-block">
+   <br>
+        <ul>
+          <li>Artist Id</li>
+          <li>Artist Name</li>
+          <li>Artist Rank</li>
+          <li>Main Genre (artist genre)</li>
+        </ul>
+</div>
+<div style="display: inline-block">
+  <br>
+  <ul>
+    <li>Related Genre</li>
+    <li>Related Artist</li>
+    <li>Related Music</li>
+    <li>Musicnn tags</li>
+  </ul>
+</div>
+</div>
+    
+    
+- 4MuLA Large - **Only Metadata** ~ 80 MB
+    - [Download](https://drive.google.com/file/d/1FqkdsCn4J2MbGLCTNiwSyzanQs2EsQaj/view?usp=sharing) (hosted in Google Drive)  
+
+ <div style="margin-left: 50px;">
+    
+<div style="display: inline-block">
+   Metadata
+        <ul>
+          <li>Music Id</li>
+          <li>Music Name</li>
+          <li>Music Language</li>
+          <li>Music Lyrics</li>
+        </ul>
+</div>
+<div style="display: inline-block">
+   <br>
+        <ul>
+          <li>Artist Id</li>
+          <li>Artist Name</li>
+          <li>Artist Rank</li>
+          <li>Main Genre (artist genre)</li>
+        </ul>
+</div>
+<div style="display: inline-block">
+  <br>
+  <ul>
+    <li>Related Genre</li>
+    <li>Related Artist</li>
+    <li>Related Music</li>
+    <li>Musicnn tags</li>
+  </ul>
+</div>
+</div>
       
-- 4MuLA tiny ~ 2 GB
-    - [Google Drive Link](https://drive.google.com/drive/folders/1Wv9ETxEJCbPDMZv4y1-AP0e-EBoGke8F?usp=sharing)
-   
+- 4MuLA Small ~ 11 GB
+    - [Download](https://drive.google.com/drive/folders/14q9cCOyQlxQg-UJZQezLebEONvfiFXDe?usp=sharing) (hosted in Google Drive)
+    - <a href="https://doi.org/10.5281/zenodo.4636802"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.4636802.svg" alt="DOI"></a> (hosted in Zenodo)
+<div style="margin-left: 50px;">   
+<div style="display: inline-block">
+   Acoustic Features
+        <ul>
+          <li>Melspectrogram</li>          
+        </ul>
+</div>
+</div>
+ <div style="margin-left: 50px;">
+    
+<div style="display: inline-block">
+   Metadata
+        <ul>
+          <li>Music Id</li>
+          <li>Music Name</li>
+          <li>Music Language</li>
+          <li>Music Lyrics</li>
+        </ul>
+</div>
+<div style="display: inline-block">
+   <br>
+        <ul>
+          <li>Artist Id</li>
+          <li>Artist Name</li>
+          <li>Artist Rank</li>
+          <li>Main Genre (artist genre)</li>
+        </ul>
+</div>
+<div style="display: inline-block">
+  <br>
+  <ul>
+    <li>Related Genre</li>
+    <li>Related Artist</li>
+    <li>Related Music</li>
+    <li>Musicnn tags</li>
+  </ul>
+</div>
+</div>
 
-- Download per acoustic features
-    - [Chromagram](features/chromagram.md) ~ 11GB
-    - [MFCC](features/mfcc.md) ~ 12GB
-    - [Melspectrogram](features/melspectrogram.md) ~ 91GB
-    - [Tempogram](features/tempogram.md) ~ 364GB
-    - [Tonnetz](features/tonnetz.md) ~ 12GB
+- 4MuLA Tiny ~ 2 GB
+    - [Download](https://drive.google.com/drive/folders/1Wv9ETxEJCbPDMZv4y1-AP0e-EBoGke8F?usp=sharing) (hosted in Google Drive)  
+    - <a href="https://zenodo.org/record/4585498"><img src="https://zenodo.org/badge/DOI/10.1145/3428658.3431089.svg" alt="DOI"></a> (hosted in Zenodo)  
+
+<div style="margin-left: 50px;">   
+<div style="display: inline-block">
+   Acoustic Features
+        <ul>
+          <li>Melspectrogram</li>          
+        </ul>
+</div>
+</div>
+ <div style="margin-left: 50px;">
+    
+<div style="display: inline-block">
+   Metadata
+        <ul>
+          <li>Music Id</li>
+          <li>Music Name</li>
+          <li>Music Language</li>
+          <li>Music Lyrics</li>
+        </ul>
+</div>
+<div style="display: inline-block">
+   <br>
+        <ul>
+          <li>Artist Id</li>
+          <li>Artist Name</li>
+          <li>Artist Rank</li>
+          <li>Main Genre (artist genre)</li>
+        </ul>
+</div>
+<div style="display: inline-block">
+  <br>
+  <ul>
+    <li>Related Genre</li>
+    <li>Related Artist</li>
+    <li>Related Music</li>
+    <li>Musicnn tags</li>
+  </ul>
+</div>
+</div>
+
 
 
 #### How to use
