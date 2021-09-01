@@ -12,9 +12,15 @@ Moreover, we can perform cross- or multilingual text analysis on lyrics, such as
 
 
 #### Datasets and subsets:
-- 4MuLA Large - 96,458 songs distributed by 15,310 artists in 76 genres. All music are organized by acoustic features in individual folders
-- 4MuLA Small - 9,661 songs distributed by 491 artists in 51 genres. Music of **Top 500** artists and only melspectrogram as acoustic feature
-- 4MuLA Tiny  - 1,988 songs distributed by 93 artists in 27 genres. Music of **Top 100** artists and only melspectrogram as acoustic feature
+- 4MuLA Large 
+  - 96,458 songs distributed by 15,310 artists in 76 genres
+  - All music are organized by acoustic features in individual folders
+- 4MuLA Small 
+  - 9,661 songs distributed by 491 artists in 51 genres
+  - Music of **Top 500** artists and only melspectrogram as acoustic feature
+- 4MuLA Tiny  
+  - 1,988 songs distributed by 93 artists in 27 genres
+  - Music of **Top 100** artists and only melspectrogram as acoustic feature
 
 #### Download 
 Its possible run the download part of dataset to use specific features. 
