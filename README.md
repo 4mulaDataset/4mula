@@ -27,8 +27,8 @@ Its possible run the download part of dataset to use specific features.
 In the [features](features) folder, all subsets are organized per features with the **same samples** in each part.
 The musics in `mfcc_part_1.parquet` are also the same musics in `chromagram_part_1.parquet`, `tonnetz_part_1.parquet`, `melspectrogram_part_1.parquet` and `tempogram_part_1.parquet`. 
 The same idea is present in parts 2, 3, 4...
-
-- 4MuLA Large ~ 490 GB
+----
+- ##### 4MuLA Large ~ 490 GB
     - [Download](https://drive.google.com/drive/folders/11PdCvT-tgOpgefg8F_VCCBMjzuYgERXe?usp=sharing) (hosted in Google
       Drive)
     - Download individual acoustic features with metadata
@@ -84,8 +84,8 @@ The same idea is present in parts 2, 3, 4...
 
         </table>
 
-
-- 4MuLA Large - **Only Metadata** ~ 80 MB
+----
+- ##### 4MuLA Large - **Only Metadata** ~ 80 MB
     - [Download](https://drive.google.com/file/d/1FqkdsCn4J2MbGLCTNiwSyzanQs2EsQaj/view?usp=sharing) (hosted in Google
       Drive)     
      - Metadata
@@ -118,8 +118,8 @@ The same idea is present in parts 2, 3, 4...
           </tr>
 
         </table>
-
-- 4MuLA Small ~ 11 GB
+----
+- ##### 4MuLA Small ~ 11 GB
     - [Download](https://drive.google.com/drive/folders/14q9cCOyQlxQg-UJZQezLebEONvfiFXDe?usp=sharing) (hosted in Google
       Drive)
     - <a href="https://doi.org/10.5281/zenodo.4636802"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.4636802.svg" alt="DOI"></a> (
@@ -165,8 +165,8 @@ The same idea is present in parts 2, 3, 4...
           </tr>
 
         </table>
-
-- 4MuLA Tiny ~ 2 GB
+----
+- ##### 4MuLA Tiny ~ 2 GB
     - [Download](https://drive.google.com/drive/folders/1Wv9ETxEJCbPDMZv4y1-AP0e-EBoGke8F?usp=sharing) (hosted in Google
       Drive)
     - <a href="https://zenodo.org/record/4585498"><img src="https://zenodo.org/badge/DOI/10.1145/3428658.3431089.svg" alt="DOI"></a> (
@@ -212,7 +212,7 @@ The same idea is present in parts 2, 3, 4...
           </tr>
 
         </table>
-
+----
 
 
 #### Requirements
